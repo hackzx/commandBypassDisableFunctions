@@ -3,7 +3,7 @@
 One .PHP to bypass disable_functions with LD_PRELOAD.
 Only support Linux.
 
-CODE: [https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD](https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD)
+CODE: [https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD](https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD)  
 Paper: [https://www.freebuf.com/web/192052.html](https://www.freebuf.com/web/192052.html)
 
 
