@@ -1,6 +1,6 @@
 # LD_PRELOAD.php
 
-One .PHP to bypass disable_functions with LD_PRELOAD.  
+One PHP file bypass disable_functions with LD_PRELOAD.  
 Only support Linux.
 
 CODE: [https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD](https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD)  
@@ -20,3 +20,11 @@ Run COMMAND with specified function:
 ```
 http://url/detect.php?action=[system|exec|passthru|shell_exec|popen|proc_open|ws|sa]&cmd=COMMAND
 ```
+
+
+# Bypass disable_functions
+
+```
+gcc -shared -fPIC bypass_disablefunc.c -o bypass_disablefunc_x64.so
+```
+
