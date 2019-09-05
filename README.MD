@@ -22,7 +22,7 @@ http://url/detect.php?action=[system|exec|passthru|shell_exec|popen|proc_open|ws
 ```
 
 
-# Bypass disable_functions
+# bypass_disablefunc.c
 
 ```
 gcc -shared -fPIC bypass_disablefunc.c -o bypass_disablefunc_x64.so
